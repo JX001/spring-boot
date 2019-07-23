@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport"
+	content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+
+<title>电子发票</title>
+</head>
+
+<body>
+	<p th:text="'结算单号, '+${invcode}+'!'" />
+	 <form action="#" th:action="@{/add}" th:object="${userInfo}" method="post">  
+	 <div>
+	 <div>*抬头名称</div>
+	  <input type="text"  placeholder="请输入抬头名称" name="username"/>  
+	  <div>*税号</div>
+	  <input type="text"  placeholder="请输入税号" name="password" />  
+	  <div>地址</div>
+	  <input type="text"  placeholder="请输入地址" name="password" />
+	  <div>电话</div>
+	   <input type="text"  placeholder="请输入电话" name="password" />    
+	    <div>开户银行</div>
+	   <input type="text"  placeholder="请输入开户银行" name="password" />    
+	   <div>银行账号</div>
+	   <input type="text"  placeholder="请输入银行账号" name="password" />    
+	   <div>*邮箱</div>
+	   <input type="text"  placeholder="请输入邮箱" name="password" />    
+	   <div></div>
+	  <input type="submit" />  
+	  </div>
+	</form> 
+
+</body>
+</html>
